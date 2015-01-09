@@ -1,0 +1,7 @@
+<div class="day">
+	<div ng-repeat="event in timeline" class="block event" style="left:{{event.startPosition}};width:{{event.eventWidth}}">'
+		<h1>{{event.start_time._d|date : 'HH:mm'}}<span>to {{event.end_time._d|date : 'HH:mm'}}</span></h1>
+		<p>{{event.AlphaDigit}}<span></span></p>
+		
+	</div>
+</div>

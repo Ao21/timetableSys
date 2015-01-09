@@ -1,0 +1,141 @@
+.header {
+    height: 120px;
+    position: relative;
+    padding: 12px;
+    padding-bottom: 0px;
+}
+
+.header h1 {
+    font-size: 72px;
+}
+
+.header h1.date {
+    position: absolute;
+    left: 25px;
+}
+
+.header h1.title {
+    position: absolute;
+    right: 25px;
+}
+
+.roomDetails {
+    width: 240px;
+}
+
+.roomTimes {
+    width: 1680px;
+}
+
+.day {
+    margin-bottom: 80px;
+    float: left;
+    margin-left: 0px;
+}
+
+.small h1 span {
+    display: none;
+}
+
+.small p span {
+    display: none;
+}
+
+timetable {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    .heading {
+        width: 235px;
+        float: left;
+        margin-right: 10px;
+    }
+    .heading h1 {
+        font-size: 44px;
+        text-align: right;
+    }
+    .heading p {
+        margin: 0;
+        padding-left: 25px;
+        font-size: 20px;
+        text-align: right;
+    }
+    .time {
+        width: 1600px;
+        height: 800px;
+        position: absolute;
+        left: 273px;
+    }
+    .line {
+        left: 700px;
+        width: 10px;
+        height: 700px;
+        position: absolute;
+        background-color: #f5af01;
+    }
+    .line h1 {
+        position: absolute;
+        left: 20px;
+        top: 0;
+        font-size: 72px;
+    }
+    .line h1.swap {
+        left: -75px;
+    }
+    .occupied {
+        color: #7c0002;
+    }
+    .free {
+        color: #f5af01;
+    }
+    .block {
+        position: relative;
+        float: left;
+        height: 120px;
+        background-color: #e1e1e1;
+    }
+    .block h1 {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        font-size: 38px;
+        font-weight: 200;
+        color: #333;
+    }
+    .block p {
+        position: absolute;
+        bottom: 7px;
+        margin: 0;
+        font-size: 20px;
+        left: 7px;
+    }
+    .block.event {
+        background-color: #f5af01;
+    }
+    .block.event p {
+        color: #fff;
+    }
+    .block.event h1 {
+        color: #fff;
+        font-weight: 200;
+    }
+    .event + .event {
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .timeLine {
+        width: 1920px;
+        padding-top: 80px;
+    }
+    a.delete {
+        text-align: right;
+    }
+}
+
+.timeline {
+    width: 100%;
+    float: left;
+    position: relative;
+    .event {
+        position: absolute;
+    }
+}
